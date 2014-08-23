@@ -275,7 +275,6 @@ nav img{
 	border-top-color:#e8e8e8;
 }
 
-
 .content h3 {
 	margin: 0 0 1.5em;
   padding: 0.8em;
@@ -319,14 +318,14 @@ footer {
 	padding: 20px 0;
 	position: relative;
 	clear: both;
+	text-align:center;
 }
 footer p{
-	color:#FFF;
-	width: 70%;
+	color:#333;
+	width: 80%;
 	height: 30px;
 	padding: 0;
 	margin: 30px 10% 15px 10%;
-text-align: right;
 }
 .fltrt {
 	float: right;
@@ -342,18 +341,24 @@ text-align: right;
 	font-size: 1px;
 	line-height: 0px;
 }
+#footnav{
+	width: 80%;
+	max-width: 1260px;
+	min-width: 780px;
+	margin: 0 auto;
+}
 #footnav ul {
-list-style: none;
+	list-style: none;
 width: 80%;
-height: 30px;
+height: 25px;
 padding: 0;
-margin: 15px 10% 15px 10%;
+margin: 15px 10% 15px 25%;
 }
 #footnav li {
 	vertical-align: baseline;
-	font-size: 100%;
-	border-right:2px dotted #333;
-padding: 0;
+	font-size: 0.8em;
+	border-right:1px dotted #555;
+	padding: 0;
 margin: 0;
 float: left;
 color: #333;
