@@ -51,8 +51,6 @@ a:hover, a:active, a:focus {
 header {
 	color: #333;
 	padding:5px;
-	/*background-image:url(img/back.png);
-	background-repeat: repeat;*/
 }
 header a:visited {
 	color:#333;
@@ -73,7 +71,7 @@ header a:link, a:visited{
 }
 header h1{
 	color: #555 ;
-	padding: 10px 10px 5px 0;
+	padding: 5px 10px 5px 0;
 	margin: 0 auto;
 	font-size:36px;
 	width: 90%;
@@ -84,7 +82,7 @@ header h1{
 }
 header h3{
 	color: #999;
-	padding: 10px 10px 8px 0;
+	padding: 10px 10px 0px 0;
 	margin: 0 auto;
 	width: 90%;
 	text-align: left;
@@ -123,39 +121,32 @@ nav img{
 	float: left;
 	width: 18%;
 	padding-bottom: 10px;
+	margin:5px;
 }
 .sidebar1 h3{
     position: relative;
-    color: #eee;
-    background: #444;
+    margin: 0 0 0;
+    padding: 0.8em 0 0.8em 2.2em;
     font-size: 1.143em;
     font-weight: bold;
-    margin: 0 0 0 -0.5em;
-    padding: 0.8em;
-    box-shadow: 0 1px 3px #777;
-    -moz-box-shadow: 0 1px 3px #777;
-    -webkit-box-shadow: 0 1px 3px #777;
-    -o-box-shadow: 0 1px 3px #777;
-    -ms-box-shadow: 0 1px 3px #777;
-		z-index: 100;
 }
-.sidebar1 h3:after,
-.sidebar1 h3:before{
+.sidebar1 h3:before {
     content: "";
     position: absolute;
-    top: 100%;
-    height: 0;
-    width: 0;
-    border: 5px solid transparent;
-    border-top: 5px solid #333;
-}
-.sidebar1 h3:before{
-    right: 0;
-    border-left: 5px solid #333;
-}
-.sidebar1 h3:after{
-    left: 0;
-    border-right: 5px solid #333;
+    background: #333;
+    top: 50%;
+    left: 0.5em;
+    margin-top :-10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    box-shadow: 1px 1px 1px #333 inset;
+    -moz-box-shadow: 1px 1px 1px #333 inset;
+    -webkit-box-shadow: 1px 1px 1px #333 inset;
+    -o-box-shadow: 1px 1px 1px #333 inset;
+    -ms-box-shadow: 1px 1px 1px #333 inset;
 }
 .content {
 	margin-right: 5px;
@@ -165,116 +156,48 @@ nav img{
 .content p {
 	text-indent: 1em
 }
-.content h1{
-	position:relative;
-	padding:5px 20px;
-	font:bold 28px/1.6 Arial, Helvetica, sans-serif;
-	color:#333;
-	background:#fff;
-	text-shadow:
-		1px 1px 0 #fff,
-		2px 2px 0 #999;
-	border-top:#333 solid 3px;
-	border-bottom:#333 solid 3px;
-    background-image: -webkit-gradient(linear, left top, right bottom,
-			from(			rgba(255, 255, 255, 0.0)), 
-			color-stop(0.4, rgba(255, 255, 255, 0.0)), 
-			color-stop(0.4, rgba(0, 0, 0, 0.1)), 
-			color-stop(0.6, rgba(0, 0, 0, 0.1)), 
-			color-stop(0.6, rgba(255, 255, 255, 0.0)),
-			to(				rgba(255, 255, 255, 0.0))
-			);
-	background-image: -webkit-linear-gradient(top -45deg,
-			transparent 40%,
-            rgba(0, 0, 0, 0.1) 40%,
-            rgba(0, 0, 0, 0.1) 60%,
-            transparent 60%
-			);
-	background-image: -moz-linear-gradient(top -45deg,
-			transparent 40%,
-            rgba(0, 0, 0, 0.1) 40%,
-            rgba(0, 0, 0, 0.1) 60%,
-            transparent 60%
-			);
-	background-image: -o-linear-gradient(top -45deg,
-			transparent 40%,
-            rgba(0, 0, 0, 0.1) 40%,
-            rgba(0, 0, 0, 0.1) 60%,
-            transparent 60%
-			);
-	background-image: linear-gradient(to bottom -45deg,
-			transparent 40%,
-            rgba(0, 0, 0, 0.1) 40%,
-            rgba(0, 0, 0, 0.1) 60%,
-            transparent 60%
-			);
-	background-size:4px 4px;
+.content h1 {
+  position: relative;
+  color: #111;
+  background: #ccc;
+  font-size: 26px;
+  line-height: 1;
+  margin: 30px 20px 10px -10px;
+  padding: 14px 5px 10px 50px;
+  border-radius: 22px 0 0 22px;
 }
-.content h1:before{
-	content:" ";
-	position:absolute;
-	top:100%;
-	left:24px;
-	width:0;
-	height:0;
-	border-width:12px;
-	border-style:solid;
-	border-color:transparent;
-	border-top-color:#333;
+.content h1:before {
+  content: "";
+  position: absolute;
+  background: #eee;
+  top: 50%;
+  left: 14px;
+  margin-top :-10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #777 inset;
 }
-.content h1:after{
-	content:" ";
-	position:absolute;
-	top:100%;
-	left:28px;
-	width:0;
-	height:0;
-	border-width:8px;
-	border-style:solid;
-	border-color:transparent;
-	border-top-color:#f0f0f0;
-	z-index:1;
+.content h1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  height: 0;
+  width: 0;
+  border: 25px solid #ccc;
+  border-right-color: transparent;
 }
-
-/* 04.吹き出し */
 .content h2{
-	position:relative;
-	margin:20px 15px;
-	padding:10px 20px;
-	font:bold 24px/1.6 Arial, Helvetica, sans-serif;
-	color:#333;
-	border:#333 solid 3px;
-	border-radius:18px;
-	background:#fff;
-	box-shadow:
-		-7px -5px 0 0 #e8e8e8 inset,
-		2px 3px 0 0 #000;
+    margin: 0 0 1.5em;
+    padding: 0.4em 0.4em 0.4em 1em;
+    border: 2px dotted #333;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
 }
-.content h2:before{
-	content:" ";
-	position:absolute;
-	top:100%;
-	left:14px;
-	width:0;
-	height:0;
-	border-width:20px;
-	border-style:solid;
-	border-color:transparent;
-	border-top-color:#333;
-}
-.content h2:after{
-	content:" ";
-	position:absolute;
-	bottom:-27px;
-	left:18px;
-	width:0;
-	height:0;
-	border-width:14px;
-	border-style:solid;
-	border-color:transparent;
-	border-top-color:#e8e8e8;
-}
-
 .content h3 {
 	margin: 0 0 1.5em;
   padding: 0.8em;
@@ -288,14 +211,12 @@ nav img{
   font-size: 0.9em;
   font-weight: bold;
 }
-
 .content ul, .content ol { 
 	padding: 0 15px 15px 40px;
 }
 ul.nav {
 	list-style: none;
 	margin-right: 0.6em;
-	background-color:#FFFFFF;
 }
 ul.nav li {
 	border-bottom: 1px dotted #666;
@@ -313,8 +234,6 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 footer {
 	width:100%;
 	color: #777;
-	/*background-image:url(img/back.png);
-	background-repeat:repeat;*/
 	padding: 20px 0;
 	position: relative;
 	clear: both;

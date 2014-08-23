@@ -5,6 +5,7 @@
 <title>サテライトサイトサンプル2</title>
 <meta name="author" content="作成者名" />
 <meta name="description" content="サイトの説明文を入れます">
+<meta name="keywords" content="キーワードを入れます">
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta name="generator" content="Dreamweaver">
 <link href="../style.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
@@ -40,26 +41,27 @@ $(function() {
 	<header>
 		<div id="head">
 			<p>ページの解説文</p>
-		<div id="title">
-		<a href="index.html">
-			<h1>ページタイトル</h1>
-		</a> 
-  	<h3>ページサブタイトル</h3>
-		</div>
+			<div id="title">
+				<h3>ページサブタイトル</h3>
+			<a href="index.html">
+				<h1>ページタイトル</h1>
+			</a> 
+			</div>
 		</div>
 	</header>
-
 <div class="container">
+	<div id="main" class="clearfix">
   <div class="sidebar1">
 		<h3>メニュー</h3>
     <ul class="nav">
-      <li><a href="sub/page1.html">リンク 1</a></li>
-      <li><a href="sub/page2.html">リンク 2</a></li>
-      <li><a href="sub/page3.html">リンク 3</a></li>
-      <li><a href="sub/page4.html">リンク 4</a></li>
-			<li><a href="sub/page5.html">リンク 5</a></li>
-			<li><a href="sub/page6.html">リンク 6</a></li>
-			<li><a href="sub/page7.html">リンク 7</a></li>
+      <li><a href="page1.html">リンク 1</a></li>
+      <li><a href="page2.html">リンク 2</a></li>
+      <li><a href="page3.html">リンク 3</a></li>
+      <li><a href="page4.html">リンク 4</a></li>
+			<li><a href="page5.html">リンク 5</a></li>
+			<li><a href="page6.html">リンク 6</a></li>
+			<li><a href="page7.html">リンク 7</a></li>
+			<li><a href="page8.html">リンク 8</a></li>
     </ul>
 		<p>ニュース・更新情報など</p>
   </div>
@@ -74,6 +76,9 @@ $(function() {
 				</p>
 			</nav>
 		</div>
+		<!--<div id="front">
+			<img src="img/front.jpg" alt="トップページのイメージ画像です" width="600px">
+		</div>-->
     <h1>見出し１</h1>
     <p>本文</p>
     <h2>見出し２</h2>
@@ -82,18 +87,19 @@ $(function() {
     <p>本文</p>
     <h4>見出し４</h4>
     <p>本文</p>
-  </div>
+  	</div>
+		</div>
   </div>
 	<footer>
 	 <div id="footnav">
-<ul>
+		<ul>
     <li><a href="#">ホーム</a></li>
     <li><a href="#">サイトマップ</a></li>
     <li><a href="#">コンセプト</a></li>
     <li><a href="#">運営主体</a></li>
     <li class="last"><a href="#">お問い合わせ</a></li>
-</ul> 
-</div>
+		</ul> 
+	</div>
     <p>Copyright © 2014 , hujuu All rights reserved.</p>
   </footer>
 	<p id="page-top"><a href="#wrap">PAGE TOP</a></p>
